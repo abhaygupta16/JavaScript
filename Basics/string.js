@@ -33,5 +33,7 @@ const url = "https://abc@abc%20fgh.com";
 // console.log(url.includes('pqr'));
 
 const anothName = new String("worldcup-USA-WI-2024");
+// console.log(anothName.split('-'));
 
-console.log(anothName.split('-'));
+const hello = "Hello, ";
+// console.log(hello.concat("Kevin", ". Have a nice day."));
