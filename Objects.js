@@ -74,6 +74,7 @@ tinderUser.isLoggedIn = false;
 // console.log(Object.keys(tinderUser));  // returns the arrray of keys for specifiec object
 // console.log(Object.values(tinderUser));  // returns the arrray of values for specifiec object
 // console.log(Object.entries(tinderUser));  // returns the arrray of key value pair of each property for specifiec object
+// console.log(tinderUser.hasOwnProperty("isLoggedIn")); //return true is property exist else false.
 
 
 // object inside object
@@ -100,9 +101,9 @@ const obj3 = {5:"e",6:"f"};
 
 // +console.log({obj1,obj2});   //creates object inside object-- { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'c', '4': 'd' } }
 
-// console.log(Object.assign({},obj1,obj2));  // { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
-// {} is target object which will store final obj
-// obj1,obj2 are soruce object
+// console.log(Object.assign({},obj1,obj2));    // { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+                                                // {} is target object which will store final obj
+                                                // obj1,obj2 are soruce object
 
 
 // console.log({...obj1,...obj2})  // spread operator { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
@@ -126,3 +127,19 @@ const dbUsers = [
 ]
 
 // console.log(dbUsers[1].email);
+
+
+
+
+// Object Destructuing
+
+const courses = {
+    courseName : "JS",
+    coursePrice : 999,
+    courseInstructor : "youtuber"
+}
+
+console.log(courses.courseName);
+
+const {courseInstructor : teacher} = courses;
+console.log(teacher);  //youtuber
